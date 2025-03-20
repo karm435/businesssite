@@ -2,36 +2,29 @@
 
 import Link from 'next/link';
 import { FiTwitter, FiFacebook, FiLinkedin, FiInstagram, FiGithub } from 'react-icons/fi';
+import appsData from '@/data/apps.json';
 
 const footerLinks = [
   {
-    title: 'Product',
-    links: [
-      { name: 'Features', href: '#features' },
-      { name: 'Pricing', href: '#pricing' },
-      { name: 'Templates', href: '/templates' },
-      { name: 'Showcase', href: '/showcase' },
-      { name: 'Integrations', href: '/integrations' },
-    ],
+    title: 'Our Apps',
+    links: appsData.apps.map(app => ({ name: app.name, href: `/apps/${app.slug}` })),
   },
   {
     title: 'Resources',
     links: [
-      { name: 'Documentation', href: '/docs' },
-      { name: 'Tutorials', href: '/tutorials' },
+      { name: 'Support', href: '/support' },
+      { name: 'FAQ', href: '/faq' },
       { name: 'Blog', href: '/blog' },
-      { name: 'Community', href: '/community' },
-      { name: 'API Reference', href: '/api' },
+      { name: 'Tutorials', href: '/tutorials' },
     ],
   },
   {
     title: 'Company',
     links: [
       { name: 'About Us', href: '/about' },
-      { name: 'Careers', href: '/careers' },
+      { name: 'Our Team', href: '/team' },
       { name: 'Contact', href: '/contact' },
-      { name: 'Partners', href: '/partners' },
-      { name: 'Press', href: '/press' },
+      { name: 'Careers', href: '/careers' },
     ],
   },
   {
@@ -61,10 +54,10 @@ const Footer = () => {
           {/* Logo and description */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="inline-block mb-6">
-              <span className="text-2xl font-display font-bold text-white">BusinessSite</span>
+              <span className="text-2xl font-display font-bold text-white">{appsData.company.name}</span>
             </Link>
             <p className="text-secondary-400 mb-6">
-              Create powerful web and mobile apps without writing a single line of code. Turn your ideas into reality.
+              {appsData.company.description}
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -103,7 +96,7 @@ const Footer = () => {
 
         <div className="border-t border-secondary-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-secondary-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} BusinessSite. All rights reserved.
+            © {new Date().getFullYear()} {appsData.company.name}. All rights reserved.
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center">
             <Link href="/terms" className="text-secondary-400 hover:text-white text-sm">

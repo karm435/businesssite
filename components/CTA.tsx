@@ -4,7 +4,25 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const CTA = () => {
+interface CTAProps {
+  title?: string;
+  description?: string;
+  buttonText?: string;
+  buttonLink?: string;
+  secondaryButtonText?: string;
+  secondaryButtonLink?: string;
+  showNote?: boolean;
+}
+
+const CTA = ({
+  title = "Ready to Build Your App Without Coding?",
+  description = "Join thousands of users who are building powerful applications without writing a single line of code. Start for free and upgrade as you grow.",
+  buttonText = "Start Building for Free",
+  buttonLink = "/signup",
+  secondaryButtonText = "Request a Demo",
+  secondaryButtonLink = "/demo",
+  showNote = true
+}: CTAProps) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -26,28 +44,30 @@ const CTA = () => {
           
           <div className="relative py-16 px-8 text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
-              Ready to Build Your App Without Coding?
+              {title}
             </h2>
             <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-              Join thousands of users who are building powerful applications without writing a single line of code. Start for free and upgrade as you grow.
+              {description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/signup"
+                href={buttonLink}
                 className="btn bg-white text-primary-600 hover:bg-primary-50 text-center"
               >
-                Start Building for Free
+                {buttonText}
               </Link>
               <Link
-                href="/demo"
+                href={secondaryButtonLink}
                 className="btn bg-primary-600 border border-primary-400 hover:bg-primary-500 text-center"
               >
-                Request a Demo
+                {secondaryButtonText}
               </Link>
             </div>
-            <p className="mt-6 text-sm text-primary-200">
-              No credit card required. 14-day free trial on all paid plans.
-            </p>
+            {showNote && (
+              <p className="mt-6 text-sm text-primary-200">
+                No credit card required. 14-day free trial on all paid plans.
+              </p>
+            )}
           </div>
         </motion.div>
       </div>

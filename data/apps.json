@@ -1,0 +1,253 @@
+{
+  "company": {
+    "name": "Karma Academy",
+    "description": "Building innovative iOS applications that simplify everyday tasks and enhance productivity.",
+    "logoText": "Karma Academy"
+  },
+  "apps": [
+    {
+      "id": "receiptsco",
+      "name": "ReceiptsCo",
+      "slug": "receiptsco",
+      "tagline": "Effortless Receipt Management",
+      "description": "Digitize and organize all your receipts in one secure place with ReceiptsCo.",
+      "url": "https://receiptsco.karmaacademy.com.au",
+      "color": "#3498db",
+      "features": [
+        {
+          "title": "Receipt Scanning",
+          "description": "Instantly scan and digitize paper receipts with our advanced OCR technology.",
+          "icon": "FiCamera"
+        },
+        {
+          "title": "Smart Organization",
+          "description": "Automatically categorize receipts by vendor, date, or custom tags for easy retrieval.",
+          "icon": "FiFolder"
+        },
+        {
+          "title": "Expense Reports",
+          "description": "Generate detailed expense reports for personal or business use in seconds.",
+          "icon": "FiFileText"
+        },
+        {
+          "title": "Cloud Backup",
+          "description": "Never lose a receipt again with secure cloud storage and backup.",
+          "icon": "FiCloud"
+        },
+        {
+          "title": "Tax Preparation",
+          "description": "Export receipts and reports for tax preparation and accounting.",
+          "icon": "FiDollarSign"
+        },
+        {
+          "title": "Multi-device Sync",
+          "description": "Access your receipts from any device with seamless synchronization.",
+          "icon": "FiSmartphone"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Sarah Johnson",
+          "role": "Small Business Owner",
+          "content": "ReceiptsCo has transformed my expense tracking. No more shoeboxes full of receipts!",
+          "avatar": "/avatars/sarah.jpg"
+        },
+        {
+          "name": "David Chen",
+          "role": "Freelance Consultant",
+          "content": "As a consultant who travels frequently, keeping track of receipts was a nightmare until I found ReceiptsCo.",
+          "avatar": "/avatars/david.jpg"
+        },
+        {
+          "name": "Michelle Rodriguez",
+          "role": "Financial Advisor",
+          "content": "I recommend ReceiptsCo to all my clients. It saves hours during tax season.",
+          "avatar": "/avatars/michelle.jpg"
+        }
+      ]
+    },
+    {
+      "id": "invoease",
+      "name": "InvoEase",
+      "slug": "invoease",
+      "tagline": "Professional Invoicing Made Simple",
+      "description": "Create, send, and track professional invoices on the go with InvoEase.",
+      "url": "https://www.invoeaseapp.com",
+      "color": "#e74c3c",
+      "features": [
+        {
+          "title": "Custom Invoices",
+          "description": "Create beautiful, branded invoices that reflect your business identity.",
+          "icon": "FiFileText"
+        },
+        {
+          "title": "Online Payments",
+          "description": "Accept payments directly through invoices with multiple payment options.",
+          "icon": "FiCreditCard"
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Set up automatic payment reminders to improve cash flow.",
+          "icon": "FiBell"
+        },
+        {
+          "title": "Client Management",
+          "description": "Manage all your clients and their information in one centralized database.",
+          "icon": "FiUsers"
+        },
+        {
+          "title": "Financial Reports",
+          "description": "Generate detailed reports to track your business performance.",
+          "icon": "FiBarChart2"
+        },
+        {
+          "title": "Time Tracking",
+          "description": "Track billable hours and automatically add them to invoices.",
+          "icon": "FiClock"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "James Wilson",
+          "role": "Graphic Designer",
+          "content": "InvoEase has simplified my invoicing process. I can now create and send professional invoices in minutes.",
+          "avatar": "/avatars/james.jpg"
+        },
+        {
+          "name": "Lisa Thompson",
+          "role": "Marketing Consultant",
+          "content": "The automated reminders have dramatically improved my payment collection rate. Excellent app!",
+          "avatar": "/avatars/lisa.jpg"
+        },
+        {
+          "name": "Robert Garcia",
+          "role": "Web Developer",
+          "content": "As a freelancer, keeping track of invoices was always a challenge. InvoEase has changed that completely.",
+          "avatar": "/avatars/robert.jpg"
+        }
+      ]
+    },
+    {
+      "id": "landlordsco",
+      "name": "LandlordsCo",
+      "slug": "landlordsco",
+      "tagline": "Simplify Property Management",
+      "description": "The all-in-one solution for property owners to manage rentals, tenants, and maintenance.",
+      "url": "https://landlordsco.karmaacademy.com.au",
+      "color": "#2ecc71",
+      "features": [
+        {
+          "title": "Rent Collection",
+          "description": "Collect rent online with automatic payment processing and tracking.",
+          "icon": "FiDollarSign"
+        },
+        {
+          "title": "Tenant Screening",
+          "description": "Screen potential tenants with background and credit checks.",
+          "icon": "FiUserCheck"
+        },
+        {
+          "title": "Maintenance Requests",
+          "description": "Manage maintenance requests and coordinate repairs efficiently.",
+          "icon": "FiTool"
+        },
+        {
+          "title": "Lease Management",
+          "description": "Create, sign, and manage digital leases with automated renewals.",
+          "icon": "FiFileText"
+        },
+        {
+          "title": "Financial Tracking",
+          "description": "Track property income, expenses, and generate tax reports.",
+          "icon": "FiPieChart"
+        },
+        {
+          "title": "Property Inspections",
+          "description": "Schedule and document property inspections with photo evidence.",
+          "icon": "FiHome"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Thomas Anderson",
+          "role": "Property Investor",
+          "content": "LandlordsCo has revolutionized how I manage my rental properties. Everything in one place!",
+          "avatar": "/avatars/thomas.jpg"
+        },
+        {
+          "name": "Karen Williams",
+          "role": "Property Manager",
+          "content": "The maintenance request system alone is worth the investment. Our tenants love the app too.",
+          "avatar": "/avatars/karen.jpg"
+        },
+        {
+          "name": "Michael Brown",
+          "role": "Rental Property Owner",
+          "content": "As a new landlord, LandlordsCo made it easy to learn the ropes and manage my property professionally.",
+          "avatar": "/avatars/michael.jpg"
+        }
+      ]
+    },
+    {
+      "id": "paperless",
+      "name": "Paperless",
+      "slug": "paperless",
+      "tagline": "Your Digital Document Assistant",
+      "description": "Transform your paper documents into searchable digital files with Paperless.",
+      "url": "https://paperless.karmaacademy.com.au",
+      "color": "#9b59b6",
+      "features": [
+        {
+          "title": "Document Scanning",
+          "description": "Turn physical documents into high-quality digital files with our advanced scanner.",
+          "icon": "FiCamera"
+        },
+        {
+          "title": "OCR Technology",
+          "description": "Convert scanned documents into searchable, editable text with OCR.",
+          "icon": "FiSearch"
+        },
+        {
+          "title": "Smart Organization",
+          "description": "Automatically categorize and tag documents for easy retrieval.",
+          "icon": "FiFolder"
+        },
+        {
+          "title": "Secure Storage",
+          "description": "Store all your documents securely with enterprise-grade encryption.",
+          "icon": "FiLock"
+        },
+        {
+          "title": "Document Sharing",
+          "description": "Share documents securely with colleagues, clients, or family members.",
+          "icon": "FiShare2"
+        },
+        {
+          "title": "Digital Signatures",
+          "description": "Sign documents digitally and request signatures from others.",
+          "icon": "FiEdit"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Jennifer Lee",
+          "role": "Office Manager",
+          "content": "Paperless has transformed our office workflow. We've reduced paper usage by 90%!",
+          "avatar": "/avatars/jennifer.jpg"
+        },
+        {
+          "name": "Daniel Martinez",
+          "role": "Legal Professional",
+          "content": "The search functionality in Paperless saves me hours when looking for specific case documents.",
+          "avatar": "/avatars/daniel.jpg"
+        },
+        {
+          "name": "Emily Wilson",
+          "role": "Home User",
+          "content": "I've digitized all my important documents with Paperless. Now I can find anything in seconds.",
+          "avatar": "/avatars/emily.jpg"
+        }
+      ]
+    }
+  ]
+} 
