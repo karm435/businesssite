@@ -1,8 +1,3 @@
-'use client';
-
-import { useEffect } from 'react';
-import { useParams } from 'next/navigation';
-import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AppHero from '@/components/AppHero';
@@ -10,23 +5,24 @@ import AppFeatures from '@/components/AppFeatures';
 import AppTestimonials from '@/components/AppTestimonials';
 import CTA from '@/components/CTA';
 import appsData from '@/data/apps.json';
+import { notFound } from 'next/navigation';
 
-export default function AppPage() {
-  const params = useParams();
-  const slug = params.slug as string;
-  
+// This function is required for static site generation with dynamic routes
+export function generateStaticParams() {
+  // Return an array of objects with the slug parameter for each app
+  return appsData.apps.map((app) => ({
+    slug: app.slug,
+  }));
+}
+
+export default function AppPage({ params }: { params: { slug: string } }) {
   // Find the app data based on the slug
-  const app = appsData.apps.find(app => app.slug === slug);
+  const app = appsData.apps.find(app => app.slug === params.slug);
   
   // If app not found, show 404
   if (!app) {
     return notFound();
   }
-
-  // Scroll to top on page load
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <main>

@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
-import type { Metadata } from 'next';
 import { Inter, Lexend } from 'next/font/google';
+import { Metadata } from 'next';
+import appsData from '@/data/apps.json';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -15,8 +16,13 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
-  title: 'BusinessSite - Build Apps Without Code',
-  description: 'Create powerful apps without writing code. Turn your ideas into reality with our no-code platform.',
+  title: `${appsData.company.name} - iOS App Developer`,
+  description: appsData.company.description,
+  openGraph: {
+    title: `${appsData.company.name} - iOS App Developer`,
+    description: appsData.company.description,
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
